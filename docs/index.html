@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Auto Organizer Support</title>
+<meta name="description" content="Support for Auto Organizer, a Mac app that sorts the loose files in a folder into category folders.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<nav><a href="index.html">Support</a><a href="privacy.html">Privacy Policy</a></nav>
+<h1>Auto Organizer Support</h1>
+<p class="muted">Auto Organizer for Mac, by May Morgan</p>
+
+<div class="card">
+<strong>Need help?</strong> Email <a href="mailto:appsupport47@gmail.com">appsupport47@gmail.com</a>.
+Please include your macOS version and a short description of what happened.
+</div>
+
+<h2>What Auto Organizer does</h2>
+<p>Auto Organizer sorts the loose files in a folder you choose into category folders inside that same folder:
+<code>images</code>, <code>docs</code>, <code>code</code>, <code>archives</code>, <code>audio</code>, <code>video</code> and <code>other</code>.</p>
+
+<h2>How to use it</h2>
+<ol>
+<li>Click <strong>Choose Folder…</strong> and pick a folder, for example Downloads.</li>
+<li>Check the preview. It lists every file that would move and where it would go. Nothing has moved yet.</li>
+<li>Click <strong>Organize…</strong> and confirm. The files move into their category folders.</li>
+<li>Changed your mind? Click <strong>Undo Last Run</strong> to put the files back where they were.</li>
+</ol>
+
+<h2>Frequently asked questions</h2>
+<p><strong>Which files are moved?</strong><br>
+Only regular files sitting directly inside the folder you chose. Subfolders and their contents, hidden files (names starting with a dot) and symbolic links are left where they are.</p>
+
+<p><strong>How does it decide the category?</strong><br>
+By file extension. For example, <code>.jpg</code> and <code>.png</code> go to <code>images</code>, <code>.pdf</code> and <code>.docx</code> go to <code>docs</code>, and <code>.zip</code> goes to <code>archives</code>. Files with an unknown extension or no extension go to <code>other</code>.</p>
+
+<p><strong>What if a file with the same name already exists?</strong><br>
+Nothing is overwritten. The moved file gets a number added, for example <code>report_1.pdf</code>.</p>
+
+<p><strong>How far back can I undo?</strong><br>
+Undo Last Run restores the most recent run in that folder. Each new run replaces the previous undo record, so undo a run before organizing the same folder again.</p>
+
+<p><strong>What is the <code>.autoorganizer-last-run.tsv</code> file?</strong><br>
+It is the undo record. It lists each file's old and new location, so Undo Last Run can put everything back. It is hidden, stays in the organized folder on your Mac, and is deleted when you use Undo Last Run.</p>
+
+<p><strong>Why can't I choose my Home folder or the whole disk?</strong><br>
+For safety, Auto Organizer refuses the top level of your disk and your Home folder. Choose a smaller folder such as Downloads or Desktop.</p>
+
+<p><strong>Does it need the internet or an account?</strong><br>
+No. Auto Organizer works entirely on your Mac, needs no account, and does not connect to the internet.</p>
+
+<footer>© 2026 May Morgan · <a href="privacy.html">Privacy Policy</a> · <a href="mailto:appsupport47@gmail.com">appsupport47@gmail.com</a></footer>
+</main>
+</body>
+</html>
